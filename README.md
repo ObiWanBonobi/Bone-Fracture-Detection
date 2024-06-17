@@ -47,8 +47,7 @@ To address the growing number of cases more efficiently, the hospital wants to i
 
 By integrating a machine learning system, the hospital aims to streamline the diagnostic process, thereby saving valuable time and reducing operational costs. This technological advancement is expected to enhance the overall efficiency of patient care at the hospital.
 
-Summary :
-
+**Summary :**
 - The client is interested in conducting a study to visually differentiate a unfractured bone from one with a fracture.
 - The client is interested in a dashboard that predicts if a bone is fractured or not with a 97% accuracy.
 
@@ -75,16 +74,16 @@ Implementing a machine learning model trained on medical imaging data will impro
 
 Rationale to map the business requirements to the Data Visualizations and ML tasks.
 
-- Business Requirement 1 : Data Visualization
+- **Business Requirement 1 :** Data Visualization
   * The images depicting the 'mean' and 'standard deviation' for both healthy bones and fractured bones will be shown on the dashboard.
   * The visual distinction between a typical healthy bone and a typical fractured bone will be visualized on the dashboard.
   * A collection of images showcasing both healthy bones and fractured bones will be visualized on the dashboard.
 
-- Business Requirement 2 : Classification
+- **Business Requirement 2 :** Classification
   * Develop and train a machine learning model designed to classify bones as either healthy or fractured. This task involves binary classification and requires defining the image dimensions.
   * The predictions should have a 97% accuracy level.
 
-- Business Requirement 3 : Report
+- **Business Requirement 3 :** Report
   * You can access and download a report containing the predicted status of all uploaded images.
 
 [Back to Top](#content)
@@ -97,27 +96,19 @@ The Bone Fracture Detection project aims to leverage machine learning (ML) to en
 
 **Objectives :**
 - **Enhanced Diagnostic Accuracy :** Reduce the incidence of missed fractures and false diagnoses through automated analysis of medical images.
-   
 - **Improved Efficiency :** Expedite the diagnosis process, enabling healthcare professionals to make timely treatment decisions.
-
 - **Cost Efficiency :** Decrease operational costs associated with manual verification and potential re-evaluations.
 
 **Value Proposition :**
 - **Accurate and Timely Diagnosis :** Provide healthcare providers with a reliable tool to swiftly identify fractures, facilitating prompt patient care.
-  
 - **Operational Efficiency :** Streamline workflow processes by reducing manual effort and improving resource allocation.
-
 - **Cost Savings:** Minimize the expenses related to extended diagnosis times and potential inaccuracies.
 
 **Implementation Strategy :**
 - **Data Collection and Annotation :** Gather a diverse dataset of medical images annotated by experts to train the ML model. The dataset can be found on [Kaggle](https://www.kaggle.com/datasets/bmadushanirodrigo/fracture-multi-region-x-ray-data/data). The dataset contains 10,580 radiographic images (X-ray) taken at the client's hospital. The images show healthy bones and fractured bones.
-   
 - **Model Development :** Develop and optimize an ML algorithm capable of accurately detecting and classifying bone fractures from images.
-
 - **Validation and Testing :** Validate the model's performance using rigorous testing protocols, including cross-validation and external validation with unseen data. The model will be successful if an accuracy of at least 97% is obtained on the test set.
-
 - **Deployment and Integration :** Integrate the ML model into an dashboard app on [Heroku](https://www.heroku.com/) to support seamless adoption by medical professionals.
-
 - **Monitoring and Iteration :** Continuously monitor model performance, gather feedback from users, and iterate to improve accuracy and reliability.
 
 The Bone Fracture Detection project represents a strategic initiative to leverage ML technology for improving healthcare outcomes. By automating fracture diagnosis, the project aims to enhance diagnostic accuracy, operational efficiency, and overall patient care while reducing costs associated with manual processes.
@@ -127,6 +118,20 @@ The Bone Fracture Detection project represents a strategic initiative to leverag
 <br>
 
 ## User Stories
+
+- **As a medical professional** : 
+    * I want to use a machine learning app to assist in identifying fractures from medical images, so that I can improve the accuracy and speed of my diagnoses.
+    * I desire a straightforward and user-friendly dashboard application.
+    * I seek to examine the average and variability images of both healthy bones and fractured bones to facilitate visual differentiation between these two classifications.
+    * I aim to observe the disparity between an average healthy bone and an average fractured bone in order to visually distinguish between the two classifications.
+    * I would like to review an image montage displaying both healthy bones and fractured bones, allowing me to visually discern between the two classifications.
+    * I seek to upload bone images and receive classifications with over 97% accuracy, enabling rapid identification of whether the bones are healthy or fractured.
+    * I want a downloadable report containing the predictions made, ensuring that I have a record of the predicted outcomes.
+- **As a Patient** : 
+    * I expect accurate and reliable diagnoses. The ML app can assist medical professionals in achieving more precise assessments, reducing the likelihood of misdiagnosis or oversight.
+    * I want swift detection of fractures through the ML app to expedite treatment planning and intervention, potentially leading to faster recovery and improved outcomes for patients.
+    * I want the app's predictions to serve as an additional diagnostic tool that supports and validates clinical assessments, fostering confidence in treatment decisions.
+
 
 [Back to Top](#content)
 
