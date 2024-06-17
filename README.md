@@ -1,4 +1,4 @@
-# **Bone Fracture Detection**
+# <h1 align="center">**Bone Fracture Detection**<h1>
 
 <br>
 
@@ -6,21 +6,27 @@
 
 <br>
 
-[Click here to visit this project on Heroku]()
+## Introduction
+
+The Bone Fracture Detection dashboard app leverages Machine Learning to allow users to upload bone images, identify whether the bone is healthy or fractured, and download a detailed report of the analysis.
+
+[Click here to visit this project on Heroku.]()
 
 <br>
 
 ## Content
 
-- [Dataset Content](#dataset-content)
 - [Business Requirements](#business-requirements)
+- [Hypothesis and how to Validate](#hypothesis-and-how-to-validate)
 - [Business Rationale](#business-rationale)
-- [Hypothesis and Validation](#hypothesis-and-validation)
 - [ML Business Case](#ml-business-case)
 - [User Stories](#user-stories)
-- [CRISP-DM](#crisp-dm)
+- [Methodology](#methodology)
+- [Rationale for the Model](#rationale-for-the-model)
 - [Dashboard Design](#dashboard-design)
 - [Features](#features)
+- [Project Outcomes](#project-outcomes)
+- [Hypothesis Outcomes](#hypothesis-outcomes)
 - [Languages and Libraries](#languages-and-libraries)
 - [Testing](#testing)
 - [Bugs](#bugs)
@@ -33,20 +39,18 @@
 
 <br>
 
-## Dataset Content
-
-The dataset contains 10,580 images taken from the client's hospital (actual source = [Kaggle](https://www.kaggle.com/datasets/bmadushanirodrigo/fracture-multi-region-x-ray-data/data)). The images show healthy bones and fractured bones. Due to the high volume of fractured bone cases, the hospital decided to implement a machine learning step to save both time and money. 
-
-[Back to Top](#bone-fracture-detection)
-
-<br>
-
 ## Business Requirements
 
 - 1 - The client is interested in conducting a study to visually differentiate a unfractured bone from one with a fracture.
 - 2 - The client is interested in predicting if a bone is fractured or not.
 
-[Back to Top](#bone-fracture-detection)
+[Back to Top](#content)
+
+<br>
+
+## Hypothesis and how to Validate
+
+[Back to Top](#content)
 
 <br>
 
@@ -54,43 +58,57 @@ The dataset contains 10,580 images taken from the client's hospital (actual sour
 
 Rationale to map the business requirements to the Data Visualizations and ML tasks
 
-[Back to Top](#bone-fracture-detection)
-
-<br>
-
-## Hypothesis and Validation
-
-[Back to Top](#bone-fracture-detection)
+[Back to Top](#content)
 
 <br>
 
 ## ML Business Case
 
-[Back to Top](#bone-fracture-detection)
+[Back to Top](#content)
 
 <br>
 
 ## User Stories
 
-[Back to Top](#bone-fracture-detection)
+[Back to Top](#content)
 
 <br>
 
-## CRISP-DM
+## Methodology
 
-[Back to Top](#bone-fracture-detection)
+CRISP-DM
+
+[Back to Top](#content)
+
+<br>
+
+## Rationale for the Model
+
+[Back to Top](#content)
 
 <br>
 
 ## Dashboard Design
 
-[Back to Top](#bone-fracture-detection)
+[Back to Top](#content)
 
 <br>
 
 ## Features
 
-[Back to Top](#bone-fracture-detection)
+[Back to Top](#content)
+
+<br>
+
+## Project Outcomes
+
+[Back to Top](#content)
+
+<br>
+
+## Hypothesis Outcomes
+
+[Back to Top](#content)
 
 <br>
 
@@ -116,13 +134,13 @@ Main Data Analysis and Machine Learning :
 - **[tensorflow](https://www.tensorflow.org/)** 
 - **[keras](https://keras.io/)** 
 
-[Back to Top](#bone-fracture-detection)
+[Back to Top](#content)
 
 <br>
 
 ## Testing
 
-[Back to Top](#bone-fracture-detection)
+[Back to Top](#content)
 
 <br>
 
@@ -133,7 +151,7 @@ Main Data Analysis and Machine Learning :
 
 ### Unfixed Bugs
 
-[Back to Top](#bone-fracture-detection)
+[Back to Top](#content)
 
 <br>
 
@@ -181,7 +199,7 @@ To clone this repository, you have to :
 
 You can see the deployed blog [here](https://prof-oaks-blog-0421d28e5692.herokuapp.com/).
 
-[Back to Top](#bone-fracture-detection)
+[Back to Top](#content)
 
 <br>
 
@@ -190,11 +208,12 @@ You can see the deployed blog [here](https://prof-oaks-blog-0421d28e5692.herokua
 ### Content
 
 - The Code Institute [Malaria Detector project](https://github.com/Code-Institute-Solutions/WalkthroughProject01) was used as a reference when creating this project.
-- The readme template was taken from [Mildew Detection](https://github.com/Porsil/mildew_detection_in_cherry_leaves) in Cherry Leaves.
+- The readme insperation comes from the Code Institute [Mildew Detection project](https://github.com/Porsil/mildew_detection_in_cherry_leaves).
+- I used ChatGPT to help refine my wording. 
 
 ### Media
 
 - The Readme image is from this website: 
   * https://lynxfreesm.shop/product_details/58369015.html
 
-[Back to Top](#bone-fracture-detection)
+[Back to Top](#content)
