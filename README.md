@@ -2,7 +2,9 @@
 
 <br>
 
-![Bone Fractures image](/data/images/Bone-Fracture.jpg)
+<p align="center">
+    <img src="data/images/bone-fracture.webp">
+<p>
 
 <br>
 
@@ -139,7 +141,41 @@ The Bone Fracture Detection project represents a strategic initiative to leverag
 
 ## Methodology
 
-CRISP-DM
+The **CRISP-DM** methodology was pivotal in guiding this Bone Fracture Detection project through its phases :
+
+1. **Business Understanding :**
+   - Defined the project objectives to improve bone fracture diagnosis accuracy and efficiency using machine learning.
+   - Identified stakeholders needs, seeking faster and more reliable fracture detection.
+
+2. **Data Understanding :**
+   - Gathered diverse datasets of medical images, including both healthy bones and fractured bones.
+   - Conducted exploratory data analysis (EDA) to understand data distributions and characteristics.
+
+3. **Data Preparation :**
+   - Cleaned and preprocessed the data to ensure consistency and quality.
+   - Extracted relevant features from the images and formatted them for machine learning model input.
+
+4. **Modeling :**
+   - Selected appropriate machine learning algorithms for binary classification of healthy versus fractured bones.
+   - Trained multiple models using the prepared data, experimenting with different algorithms and hyperparameters.
+
+5. **Evaluation :**
+   - Evaluated model performance using metrics such as accuracy, precision, recall, and F1-score.
+   - Used cross-validation techniques to assess model robustness and generalization to new data.
+
+6. **Deployment :**
+   - Integrated the best-performing model into a user-friendly application.
+   - Ensured a working Heroku application for seamless adoption by medical professionals.
+
+<br>
+
+<p align="center">
+    <img src="data/images/crisp-dm.webp">
+<p>
+
+<br>
+
+I employed the **Agile** methodology to ensure a flexible and iterative development process. By breaking the project into manageable sprints, I was able to continuously integrate feedback and make incremental improvements. Each sprint focused on specific tasks, such as data preprocessing, model training, and evaluation, allowing for regular assessments and adjustments. This approach facilitated close collaboration with stakeholders, enabling us to swiftly respond to their needs and incorporate their insights into the development cycle. The Agile methodology proved instrumental in delivering a robust and user-centric bone fracture detection system efficiently and effectively.
 
 [Back to Top](#content)
 
@@ -277,6 +313,7 @@ You can see the deployed blog [here](https://prof-oaks-blog-0421d28e5692.herokua
 ### Media
 
 - The Readme image is from this website: 
-  * https://lynxfreesm.shop/product_details/58369015.html
+  * [Fractured bones image](https://lynxfreesm.shop/product_details/58369015.html)
+  * [CRISP-DM image](https://quizlet.com/294902465/crisp-dm-diagram/)
 
 [Back to Top](#content)
