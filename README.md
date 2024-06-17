@@ -73,7 +73,19 @@ Implementing a machine learning model trained on medical imaging data will impro
 
 ## Business Rationale
 
-Rationale to map the business requirements to the Data Visualizations and ML tasks
+Rationale to map the business requirements to the Data Visualizations and ML tasks.
+
+- Business Requirement 1 : Data Visualization
+  * The images depicting the 'mean' and 'standard deviation' for both healthy bones and fractured bones will be shown on the dashboard.
+  * The visual distinction between a typical healthy bone and a typical fractured bone will be visualized on the dashboard.
+  * A collection of images showcasing both healthy bones and fractured bones will be visualized on the dashboard.
+
+- Business Requirement 2 : Classification
+  * Develop and train a machine learning model designed to classify bones as either healthy or fractured. This task involves binary classification and requires defining the image dimensions.
+  * The predictions should have a 97% accuracy level.
+
+- Business Requirement 3 : Report
+  * You can access and download a report containing the predicted status of all uploaded images.
 
 [Back to Top](#content)
 
