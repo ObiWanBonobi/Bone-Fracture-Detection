@@ -41,8 +41,16 @@ The Bone Fracture Detection dashboard app leverages Machine Learning to allow us
 
 ## Business Requirements
 
-- 1 - The client is interested in conducting a study to visually differentiate a unfractured bone from one with a fracture.
-- 2 - The client is interested in predicting if a bone is fractured or not.
+The Tirol Hospital in Austria, located near numerous popular ski areas, has been experiencing a high influx of patients with fractured bones. This surge is largely attributed to the skiing activities in the region, which inherently come with a risk of injuries. 
+
+To address the growing number of cases more efficiently, the hospital wants to implement a machine learning system to expedite the process of diagnosing fractures. Currently, the verification of bone fractures is performed manually by medical professionals, a method that is not only time-consuming but also costly. 
+
+By integrating a machine learning system, the hospital aims to streamline the diagnostic process, thereby saving valuable time and reducing operational costs. This technological advancement is expected to enhance the overall efficiency of patient care at the hospital.
+
+Summary :
+
+- The client is interested in conducting a study to visually differentiate a unfractured bone from one with a fracture.
+- The client is interested in a dashboard that predicts if a bone is fractured or not with a 97% accuracy.
 
 [Back to Top](#content)
 
