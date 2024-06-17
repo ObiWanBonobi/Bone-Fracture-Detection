@@ -93,6 +93,35 @@ Rationale to map the business requirements to the Data Visualizations and ML tas
 
 ## ML Business Case
 
+The Bone Fracture Detection project aims to leverage machine learning (ML) to enhance the efficiency and accuracy of diagnosing bone fractures. Currently, the process relies heavily on manual inspection, which is time-consuming and prone to human error. By implementing an ML model trained on medical imaging data, the project seeks to automate and streamline this critical diagnostic procedure.
+
+**Objectives :**
+- **Enhanced Diagnostic Accuracy :** Reduce the incidence of missed fractures and false diagnoses through automated analysis of medical images.
+   
+- **Improved Efficiency :** Expedite the diagnosis process, enabling healthcare professionals to make timely treatment decisions.
+
+- **Cost Efficiency :** Decrease operational costs associated with manual verification and potential re-evaluations.
+
+**Value Proposition :**
+- **Accurate and Timely Diagnosis :** Provide healthcare providers with a reliable tool to swiftly identify fractures, facilitating prompt patient care.
+  
+- **Operational Efficiency :** Streamline workflow processes by reducing manual effort and improving resource allocation.
+
+- **Cost Savings:** Minimize the expenses related to extended diagnosis times and potential inaccuracies.
+
+**Implementation Strategy :**
+- **Data Collection and Annotation :** Gather a diverse dataset of medical images annotated by experts to train the ML model. The dataset can be found on [Kaggle](https://www.kaggle.com/datasets/bmadushanirodrigo/fracture-multi-region-x-ray-data/data). The dataset contains 10,580 radiographic images (X-ray) taken at the client's hospital. The images show healthy bones and fractured bones.
+   
+- **Model Development :** Develop and optimize an ML algorithm capable of accurately detecting and classifying bone fractures from images.
+
+- **Validation and Testing :** Validate the model's performance using rigorous testing protocols, including cross-validation and external validation with unseen data. The model will be successful if an accuracy of at least 97% is obtained on the test set.
+
+- **Deployment and Integration :** Integrate the ML model into an dashboard app on [Heroku](https://www.heroku.com/) to support seamless adoption by medical professionals.
+
+- **Monitoring and Iteration :** Continuously monitor model performance, gather feedback from users, and iterate to improve accuracy and reliability.
+
+The Bone Fracture Detection project represents a strategic initiative to leverage ML technology for improving healthcare outcomes. By automating fracture diagnosis, the project aims to enhance diagnostic accuracy, operational efficiency, and overall patient care while reducing costs associated with manual processes.
+
 [Back to Top](#content)
 
 <br>
@@ -237,7 +266,7 @@ You can see the deployed blog [here](https://prof-oaks-blog-0421d28e5692.herokua
 ### Content
 
 - The Code Institute [Malaria Detector project](https://github.com/Code-Institute-Solutions/WalkthroughProject01) was used as a reference when creating this project.
-- The readme insperation comes from the Code Institute [Mildew Detection project](https://github.com/Porsil/mildew_detection_in_cherry_leaves).
+- The readme template and layout comes from the Code Institute [Mildew Detection project](https://github.com/Porsil/mildew_detection_in_cherry_leaves).
 - I used ChatGPT to help refine my wording. 
 
 ### Media
