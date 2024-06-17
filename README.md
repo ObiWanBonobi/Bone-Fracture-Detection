@@ -58,6 +58,15 @@ Summary :
 
 ## Hypothesis and how to Validate
 
+Implementing a machine learning model trained on medical imaging data will improve the accuracy and efficiency of detecting bone fractures compared to traditional manual diagnosis methods.
+
+- Fractured bones can be distinguished from healthy ones by their distinctive appearance.
+    * This can be verified by creating an average image study and image montage to determine differences in the appearance of healthy bones and fractured bones.
+- Bones can be determined to be healthy or fractured with a degree of 97% accuracy.
+    * This can be verified by evaluating the model on the test dataset, which should achieve at least 97% accuracy.
+- If the image uploaded contains colours, the model will predict false results.
+    * This can be verified by testing the model with new pictures of bones that contains colours, since the dataset images are only in black, white and grey. Use x-ray images that contain only black, white and grey.
+
 [Back to Top](#content)
 
 <br>
