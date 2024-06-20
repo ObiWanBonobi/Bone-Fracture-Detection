@@ -247,8 +247,18 @@ Main Data Analysis and Machine Learning :
 
 ### Fixed Bugs
 
+<details><summary>Image bug :</summary>
+
+- The images from the dataset were different types of images so I had to change all the images to the same file extention and change them all to RGB
+
+![Image types](/data/images/bugfix_images.png)
+
+</details>
+
 
 ### Unfixed Bugs
+
+The dataset that I downloaded contains duplicate images in the presplit train, validation and test folders. If I were to join them and then split up again, some of the folders will contain duplicate files that are differently named. I tried looking for a different dataset but was unsuccesfull. I will continue trying to find a good dataset or delete the duplicates.
 
 [Back to Top](#content)
 
@@ -306,7 +316,7 @@ You can see the deployed blog [here](https://prof-oaks-blog-0421d28e5692.herokua
 
 ### Content
 
-- The Code Institute [Malaria Detector project](https://github.com/Code-Institute-Solutions/WalkthroughProject01) was used as a reference when creating this project.
+- The Code Institute [Malaria Detector project](https://github.com/Code-Institute-Solutions/WalkthroughProject01) and the [Mildew Detection project](https://github.com/Porsil/mildew_detection_in_cherry_leaves) were used as a reference when creating this project.
 - The readme template and layout comes from the Code Institute [Mildew Detection project](https://github.com/Porsil/mildew_detection_in_cherry_leaves).
 - I used ChatGPT to help refine my wording. 
 
