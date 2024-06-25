@@ -263,6 +263,14 @@ Main Data Analysis and Machine Learning :
 
 </details>
 
+<details><summary>Confusion Matrix bug :</summary>
+
+- The matrix was returning incorrectly. 
+
+![Image types](/data/images/confusion-matrix-bug.png)
+
+</details>
+
 ### Unfixed Bugs
 
 The dataset that I downloaded contains duplicate images in the presplit train, validation and test folders. If I were to join them and then split up again, some of the folders will contain duplicate files that are differently named. I tried looking for a different dataset but was unsuccesfull. I will continue trying to find a good dataset or delete the duplicates.
