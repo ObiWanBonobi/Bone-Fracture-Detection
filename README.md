@@ -255,6 +255,13 @@ Main Data Analysis and Machine Learning :
 
 </details>
 
+<details><summary>Save image bug :</summary>
+
+- In the data visualisation notebook, there was a bug that only the average fractured image was saving. This was because I needed to add an indentation on the last if statement.
+
+![Image save bug](/data/images/data-vis-bug.png)
+
+</details>
 
 ### Unfixed Bugs
 
