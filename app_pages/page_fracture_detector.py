@@ -7,7 +7,7 @@ from io import BytesIO
 from src.data_management import download_dataframe_as_csv
 from src.machine_learning.predictive_analysis import (
                                                         load_model_and_predict,
-                                                        resize_input_image,
+                                                        change_input_image,
                                                         plot_predictions_probabilities
                                                      )
 
@@ -29,7 +29,7 @@ def fracture_detector_body():
     st.write("---")
 
     images_buffer = st.file_uploader('Upload bone images. You may select more than one.',
-                                        type='jpg', accept_multiple_files=True)
+                                        type=['png', 'jpg', 'jpeg'], accept_multiple_files=True)
 
     if images_buffer is not None:
         df_report = pd.DataFrame([])
@@ -42,7 +42,7 @@ def fracture_detector_body():
                 img_pil, caption=f"Image Size: {img_array.shape[1]}px width x {img_array.shape[0]}px height")
 
             version = 'v1'
-            resized_img = resize_input_image(img=img_pil, version=version)
+            resized_img = change_input_image(img=img_pil, version=version)
             pred_proba, pred_class = load_model_and_predict(
                 resized_img, version=version)
             plot_predictions_probabilities(pred_proba, pred_class)

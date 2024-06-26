@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import plotly.express as px
+import os
 from tensorflow.keras.models import load_model
 from PIL import Image
 from src.data_management import load_pkl_file
@@ -32,12 +33,18 @@ def plot_predictions_probabilities(pred_proba, pred_class):
     st.plotly_chart(fig)
 
 
-def resize_input_image(img, version):
+def change_input_image(img, version):
     """
-    Reshape image to average image size.
+    Reshape image to average image size. Change image extention to .jpg. And convert image to RGB.
     """
     image_shape = load_pkl_file(file_path=f"outputs/{version}/image_shape.pkl")
-    img_resized = img.resize((image_shape[1], image_shape[0]), Image.Resampling.LANCZOS)
+    img_name = img.filename
+    file_name, file_ext = os.path.splitext(img_name)
+
+    if file_ext != "jpg":
+        os.path.join(file_name + "." + "jpg")
+
+    img_resized = img.resize((image_shape[1], image_shape[0]), Image.Resampling.LANCZOS).convert('RGB')
     my_image = np.expand_dims(img_resized, axis=0) / 255
     return my_image
 

@@ -271,6 +271,24 @@ Main Data Analysis and Machine Learning :
 
 </details>
 
+<details><summary>Image upload bug :</summary>
+
+- An error comes up stating that the image shape is not correct when certain images get uploaded. I fixed this by adding RGB converter. I also changed the extention so that all images that get uploaded turn into a .jpg file. 
+
+![Image types](/data/images/upload-bug.png)
+
+</details>
+
+<details><summary>White image upload bug :</summary>
+
+- When a white image gets uploaded the prediction is always fractured. 
+
+![Image types](/data/images/white-image-bug-2.png)
+
+![Image types](/data/images/white-image-bug.png)
+
+</details>
+
 ### Unfixed Bugs
 
 The dataset that I downloaded contains duplicate images in the presplit train, validation and test folders. If I were to join them and then split up again, some of the folders will contain duplicate files that are differently named. I tried looking for a different dataset but was unsuccesfull. I will continue trying to find a good dataset or delete the duplicates.
