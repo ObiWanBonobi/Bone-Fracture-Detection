@@ -183,6 +183,48 @@ I employed the **Agile** methodology to ensure a flexible and iterative developm
 
 ## Rationale for the Model
 
+An effective machine learning model makes accurate predictions by generalizing well from the training data to new, unseen data. Ideally, such a model should also be as simple as possible, avoiding unnecessary complexity in its neural network and high computational demands.
+
+If a model is trained for too long on the training dataset or is overly complex, it might start learning the noise or irrelevant details from the data. This leads to overfitting, where the model performs exceptionally well on the training data but poorly on new data due to its inability to generalize. Overfitting can be identified by evaluating the model's performance on validation and test datasets.
+
+Conversely, underfitting happens when the model fails to capture the underlying relationship between the input and output data. This can be detected by its poor performance on the training dataset, which usually results in similarly low accuracy on the validation and test datasets.
+
+### Model Creation
+
+This project focuses on image classification, requiring the implementation of a Convolutional Neural Network using TensorFlow. The goal is to develop a model for binary image classification, distinguishing between healthy and infected outcomes.
+
+For binary classification tasks, the approach involves choosing between two options: using a single neuron with a sigmoid activation function or employing two neurons with a softmax activation function. Both configurations were tested and fine-tuned during the experimental phase.
+
+The model underwent iterative refinement to address issues like underfitting and overfitting, ensuring it achieves balanced performance. Version v4 was ultimately selected for deployment based on comprehensive model evaluation.
+
+The final model is a sequential model that includes the following components:
+
+- **Convolutional layers** - This was used to distinguish the dominant pixel values from the non-dominant ones in images by applying filters to identify patterns within the image.
+
+  - I used 3 Convolution layers in the model.
+  - I used Conv2D as the images are in 2D.
+  - The number of filters that I used was 8, 16 and 16 to keep the complexity low
+  - I used the Kernel size of 3x3 because this is deemed the most efficient.
+  - I used the Activation Relu because it is straightforward and efficient with hidden layers of a binary classification model.
+
+- **Pooling layers** - This was used to reduce the image size by capturing only the most significant pixels from the image.
+
+  - Following each convolution layer, a pooling layer is applied. This pairing effectively removes unnecessary elements from the image and simplifies its complexity.
+  - MaxPooling was utilized to highlight the brighter pixels in the image.
+
+- **Flatten layer** - This method was employed to convert the matrix into a vector, creating a unified list of all values that is subsequently passed into a dense layer.
+
+- **Dense layer** - This was used for a densely connected neural network layer.
+  - 32 nodes were chosen through the trial and error process.
+  - The Activation Relu was used.
+
+- **Dropout layer** - a regularization layer was implemented to mitigate the risk of overfitting in the neural network.
+  - 0.5 was chosen.
+
+- **Output layer**
+  - sigmoid activation was determined as optimal through iterative testing. This configuration necessitated 1 node to accommodate the output possibility, with binary_crossentropy selected as the appropriate loss function.
+  - The SGD optimizer was selected after thorough experimentation and testing.
+
 [Back to Top](#content)
 
 <br>
