@@ -25,6 +25,8 @@ def summary_body():
         The dataset contains 10,580 radiographic images taken from at the client's hospital. 
         Half of the images show healthy bones and the other half shows fractured bones.''')
 
+    st.write("---")
+
     st.header("**Project Readme**\n\n")
 
     st.success('''
