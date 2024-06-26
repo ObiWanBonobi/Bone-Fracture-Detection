@@ -285,23 +285,25 @@ The final model is a sequential model that includes the following components:
 
 This project was written in Python.
 
-Main Data Analysis and Machine Learning :
+**Main Data Analysis and Machine Learning :**
 
 - **[GitHub](https://github.com/)** was used for version control and agile methodology.
-- **[GitPod](https://www.gitpod.io/)** was the workspace used for this project.
-- **[Heroku](https://www.heroku.com/)** was used to deploy the site.
-- **[Kaggle](https://www.kaggle.com/)** was the source of the dataset.
+- **[GitPod](https://www.gitpod.io/)** was the IDE used for this project.
+- **[Heroku](https://www.heroku.com/)** was used to deploy the app.
+- **[Kaggle](https://www.kaggle.com/)** was the source of the bone fracture dataset.
 - **[Jupyter Notebook](https://jupyter.org/)** was used to run the machine learning pipeline.
 
-- **[numpy](https://numpy.org/)** 
-- **[pandas](https://pandas.pydata.org/)** 
-- **[matplotlib](https://matplotlib.org/)** 
-- **[seaborn](https://seaborn.pydata.org/)** 
-- **[plotly](https://plotly.com/)** 
-- **[streamlit](https://streamlit.io/)** was used to display the dashboard
-- **[scikit-learn](https://scikit-learn.org/stable/)** 
+- **[numpy](https://numpy.org/)** was used to convert images into an array.
+- **[pandas](https://pandas.pydata.org/)** was used for data analysis and manipulation of tasks.
+- **[matplotlib](https://matplotlib.org/)** was used for creating charts and plots to visualize our data.
+- **[seaborn](https://seaborn.pydata.org/)** was used for data visualization.
+- **[plotly](https://plotly.com/)** was used for creating plots and charts to visualize our data.
+- **[Joblib](https://joblib.readthedocs.io/en/latest/)** was used to save and load image shapes.
+- **[Scikit-learn](https://scikit-learn.org/stable/)** was used to convert images into an array.
 - **[tensorflow](https://www.tensorflow.org/)** 
-- **[keras](https://keras.io/)** 
+- **[keras](https://keras.io/)** was used for building our neural network for the image model.
+- **[Pillow](https://pypi.org/project/pillow/)** was used to manipulate the images.
+- **[streamlit](https://streamlit.io/)** was used to display the dashboard.
 
 [Back to Top](#content)
 
