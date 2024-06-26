@@ -189,6 +189,34 @@ I employed the **Agile** methodology to ensure a flexible and iterative developm
 
 ## Dashboard Design
 
+### **Page 1 : Project summary page**
+- Shows an introduction.
+- Shows the projects dataset summary.
+- Shows the client's business requirements.
+- Shows a link to the Readme file of this project.
+
+### **Page 2 : Project findings**
+- Shows business requirement 1.
+- Shows images depicting the 'mean' and 'standard deviation' for both healthy bones and fractured bones.
+- Shows a visual distinction between a healthy bone and a fractured bone.
+- Shows an image montage of both fractured and healthy bones.
+
+### **Page 3 : Bone fracture detection**
+- Shows business requirements 2.
+- Shows a link to download a set of fractured images for live prediction.
+- Shows a User Interface with a file uploader widget so that the user can upload images for prediction. It will display the image with the prediction if the bone is fractured or not.
+- Shows a table with the image name and prediction results.
+- Shows a download button to download the table.
+
+### **Page 4 : Project Hypothesis and Validation**
+- Shows a page indicating your project hypothesis and how you validated it across the project.
+
+### **Page 5 : Technical information**
+- Shows the details of the ML Performance Metrics.
+- Shows the label frequencies for train, validation and test sets.
+- Shows the model history - accuracy and losses
+- Shows the model evaluation result
+
 [Back to Top](#content)
 
 <br>
