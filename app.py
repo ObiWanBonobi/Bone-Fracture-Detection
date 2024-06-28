@@ -23,6 +23,7 @@ app.add_page('ML Performance Metrics', ml_performance_metrics)
 app.run()
 
 
+# Sets background images in the dashboard
 def get_base64(bin_file):
     with open(bin_file, 'rb') as f:
         data = f.read()

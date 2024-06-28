@@ -1,0 +1,7 @@
+inputs/fracture_dataset/bone_fracture/bone_fracture/train
+inputs/fracture_dataset/bone_fracture/bone_fracture/test
+README.md
+outputs/v1
+outputs/v2
+outputs/v3
+outputs/v5
