@@ -272,11 +272,73 @@ The final model is a sequential model that includes the following components:
 
 ## Project Outcomes
 
+**Business Requirement 1: Data Visualization**
+
+You can view the visualization study on the [Bones Visualizer page]() of the dashboard. This study includes mean and variability images, along with an image montage that compares healthy and fractured bones. The average and variability images for fractured and unfractured bones reveal subtle distinctions that are often challenging to discern. Despite the differences in bone integrity, these images occasionally show only slight variations in texture and structure.
+
+**Business Requirement 2: Classification**
+
+You can access the classification tool on the [Fracture Detector page]() of the dashboard. Users can upload bone images and receive classification predictions for each image, either fractured or not fractured, accompanied by a probability graph. The predictions have an accuracy rate exceeding 97%.
+
+**Business Requirement 3: Report**
+
+After classifying the images, you can view the report on the [Fracture Detector page]() of the dashboard. The report displays a table with the image name, probability percentage, and result for each uploaded image. Additionally, users can click 'Download Report' to save the report as a .csv file, which can be easily opened in Microsoft Excel.
+
 [Back to Top](#content)
 
 <br>
 
 ## Hypothesis Outcomes
+
+### Hypothesis 1
+
+- Fractured bones can be differentiated by a professional from healthy bones by their appearance.
+
+This hypothesis was validated by conducting an average image study and creating an image montage to highlight the differences in the appearance of healthy versus fractured bones.
+
+The image montage reveals that fractured bones can be identified by subtle anomalies, such as misalignments and small fractures. Consequently, the average and variability images displayed only minimal differences.
+
+![Variability](data/images/variability.png)
+
+The difference between the averages study did not reveal clear patterns that allow for intuitive differentiation between healthy and fractured bones. 
+
+To view the image montage, average and variability images, and the difference between averages study, select the 'Bones Visualizer' option from the sidebar menu.
+
+Conclusion: The hypothesis was partially validated. While the average and variability images showed minimal differences, a professional can detect distinctions in the image montage.
+
+<br>
+
+### Hypothesis 2
+
+- Bones can be accurately classified as healthy or fractured with a 97% accuracy rate.
+
+![Healthy leg](data/images/healthy-and-fractured-leg.png)
+
+This was confirmed by testing the model on a separate dataset.
+
+During training and validation, the model achieved an accuracy of over 99%, and it maintained a 99% accuracy when evaluated on the test dataset.
+
+Conclusion: The hypothesis was validated as the model, utilizing a Convolutional Neural Network, successfully classified X-ray images of bones as either healthy or fractured with an accuracy exceeding 97%.
+
+<br>
+
+### Hypothesis 3
+
+- The model produces false results if the X-ray image has an atypical color scheme compared to the standard black X-ray image.
+
+This was confirmed by uploading the following white images to the dashboard:
+
+![Hypothesis Pictures](data/images/white-image-incorrect-predictions.png)
+
+The results showed only the first image that is fractured returns correct. The other images return an incorrect prediction:
+
+![Hypothesis Results]()
+
+This insight will be communicated to the client to ensure they understand the importance of using the correct X-ray color scheme for optimal model performance. The x-ray image should follow this colour scheme :
+
+![Black x-ray image](data/images/black-xray.jpg)
+
+Conclusion: The hypothesis was correct, as the model misclassified images with a white X-ray color scheme.
 
 [Back to Top](#content)
 
