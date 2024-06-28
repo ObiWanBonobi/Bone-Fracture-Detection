@@ -232,6 +232,10 @@ The final model is a sequential model that includes the following components:
 
 ## Dashboard Design
 
+I chose cute skeleton backgrounds for this project to bring a touch of warmth and approachability to a subject that can often be perceived as daunting. Bone fractures, while medically serious, don't have to be presented in a clinical or intimidating manner. By using a cute skeleton background, I aim to create a more inviting and less stressful environment for users engaging with the project. This approach helps to humanize the technology, making it more accessible and engaging for the users.
+
+I set the project's theme to dark upon loading the app to match the dark background images. This enhances visual appeal, improves readability, and creates a cohesive and comfortable user experience.
+
 ### **Page 1 : Project summary page**
 - Shows an introduction.
 - Shows the projects dataset summary.
@@ -581,12 +585,16 @@ You can see the deployed blog [here](https://prof-oaks-blog-0421d28e5692.herokua
 - The Code Institute [Malaria Detector project](https://github.com/Code-Institute-Solutions/WalkthroughProject01) and the [Mildew Detection project](https://github.com/Porsil/mildew_detection_in_cherry_leaves) were used as a reference when creating this project.
 - The readme template and layout comes from the Code Institute [Mildew Detection project](https://github.com/Porsil/mildew_detection_in_cherry_leaves).
 - I used ChatGPT to help refine my wording. 
+- [This forum](https://discuss.streamlit.io/t/how-do-i-use-a-background-image-on-streamlit/5067) and [this forum](https://github.com/streamlit/streamlit/issues/3073) helped me with how to add a background images.
 
 ### Media
 
 - The Readme image is from these websites : 
   * [Fractured bones image](https://lynxfreesm.shop/product_details/58369015.html)
   * [CRISP-DM image](https://quizlet.com/294902465/crisp-dm-diagram/)
+- The streamlit background images are from these websites :
+  * [Skeletons background for main section](https://www.shutterstock.com/image-vector/funny-cartoon-dancing-skeleton-simple-black-2360714257)
+  * [Skeleton background for navigation](https://mrwallpaper.com/wallpapers/cute-skeleton-in-a-dab-pose-hkskty55086ngjnm.html)
 
 [Back to Top](#content)
 
