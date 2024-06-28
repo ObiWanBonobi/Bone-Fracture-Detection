@@ -35,7 +35,7 @@ The Bone Fracture Detection dashboard app leverages Machine Learning to allow us
     * [Fixed Bugs](#fixed-bugs)
     * [Unfixed Bugs](#unfixed-bugs)
 - [Deployment](#deployment)
-    * [Github Deployment](#github-deployment)
+    * [Github Deployment](#github-deployment)3
     * [Heroku Deployment](#heroku-deployment)
 - [Credits](#credits)
 
@@ -204,7 +204,7 @@ The final model is a sequential model that includes the following components:
 
   - I used 3 Convolution layers in the model.
   - I used Conv2D as the images are in 2D.
-  - The number of filters that I used was 8, 83 and 16 to keep the complexity low
+  - The number of filters that I used was 8, 16 and 16 to keep the complexity low
   - I used the Kernel size of 3x3 because this is deemed the most efficient.
   - I used the Activation Relu because it is straightforward and efficient with hidden layers of a binary classification model.
 
@@ -311,6 +311,100 @@ This project was written in Python.
 <br>
 
 ## Testing
+
+
+**<details><summary>Model testing :</summary>**
+
+The version used for the dashboard was version 4, as this showed a normal fit with no sign of overfitting and had an accuracy level of above 99% to meet business requirement 2. All versions got tested on the test_set, had early_stopping with patience on 3.
+
+- Version 1 : showed signs of slight underfitting.
+
+<br>
+
+![Version 1](data/images/version-1.png)
+
+<br>
+
+- Version 2 : showed signs of slight underfitting.
+
+<br>
+
+![Version 2](data/images/version-2.png)
+
+<br>
+
+- Version 3 : showed signs of underfitting.
+
+<br>
+
+![Version 3](data/images/version-3.png)
+
+<br>
+
+- Version 4 : shows a normal learning curve. This is the model that was chosen.
+
+<br>
+
+![Version 4](data/images/version-4.png)
+
+<br>
+
+- Version 5 : version 4 behaved better.
+
+<br>
+
+![Version 5](data/images/version-5.png)
+
+<br>
+
+</details>
+
+**<details><summary>Dashboard Testing :</summary>**
+
+Business requirement 1 : Data Visualization
+
+| Page | Feature |✔️ / ❌|
+|-|-|-|
+| Navigation | Summary page link | ✔️ |
+| Navigation | Visualiser page link | ✔️ |
+| Navigation | Detection page link | ✔️ |
+| Navigation | Hypothesis page link | ✔️ |
+| Navigation | Performance page link | ✔️ |
+|-|-|-|
+| Summary | Content | ✔️ |
+| Summary | ReadMe link | ✔️ |
+|-|-|-|
+| Visualizer | Content | ✔️ |
+| Visualizer | 1st checkbox ticked | ✔️ |
+| Visualizer | 1st checkbox unticked | ✔️ |
+| Visualizer | 2nd checkbox ticked | ✔️ |
+| Visualizer | 2nd checkbox unticked | ✔️ |
+| Visualizer | 3rd checkbox ticked | ✔️ |
+| Visualizer | 3rd checkbox unticked | ✔️ |
+| Visualizer | Show images | ✔️ |
+| Visualizer | Unfractured montage | ✔️ |
+| Visualizer | Fractured montage | ✔️ |
+|-|-|-|
+| Detection | Content | ✔️ |
+| Detection | Kaggle dataset link | ✔️ |
+| Detection | Drag and drop file upload | ✔️ |
+| Detection | Browse file upload | ✔️ |
+| Detection | Show uploaded images | ✔️ |
+| Detection | Show predictions | ✔️ |
+| Detection | Show probability graph | ✔️ |
+| Detection | Analysis report | ✔️ |
+| Detection | Downloadable report | ✔️ |
+|-|-|-|
+| Hypothesis | Content | ✔️ |
+| Hypothesis | Show images | ✔️ |
+|-|-|-|
+| Performance | Content | ✔️ |
+| Performance | Show images | ✔️ |
+| Performance | Show dataframe | ✔️ |
+
+</details>
+
+<br>
 
 [Back to Top](#content)
 
