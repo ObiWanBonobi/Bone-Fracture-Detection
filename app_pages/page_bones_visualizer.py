@@ -19,13 +19,13 @@ def bones_visualizer_body():
     st.info('''
         ### **Fracture Visualizer**
         This page will fulfill Business Requirement 1 by providing a visual 
-        comparison between fractured bones and healthy bones. Users 
-        will be able to differentiate between the two states through 
+        comparison between fractured bones and healthy bones. Users will be 
+        able to differentiate a subtle distinctions between the two states through 
         images. This visual representation will aid in understanding the impact 
         of fractures, promoting better awareness and facilitating more informed 
         discussions on bone health.''')
 
-    version = 'v1'
+    version = 'v4'
     if st.checkbox(
         "Difference between average and variability in fractured and not fractured images"):
 

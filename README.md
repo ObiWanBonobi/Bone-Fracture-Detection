@@ -51,7 +51,8 @@ By integrating a machine learning system, the hospital aims to streamline the di
 
 **Summary :**
 - The client is interested in conducting a study to visually differentiate a unfractured bone from one with a fracture.
-- The client is interested in a dashboard that predicts if a bone is fractured or not with a 97% accuracy.
+- The client is interested in a dashboard that predicts if a bone is fractured or not.
+- The client would like the dashboard to predict if a bone is healthy or fractured with a 97% accuracy.
 
 [Back to Top](#content)
 
@@ -65,8 +66,8 @@ Implementing a machine learning model trained on medical imaging data will impro
     * This can be verified by creating an average image study and image montage to determine differences in the appearance of healthy bones and fractured bones.
 - Bones can be determined to be healthy or fractured with a degree of 97% accuracy.
     * This can be verified by evaluating the model on the test dataset, which should achieve at least 97% accuracy.
-- If the image uploaded contains colours, the model will predict false results.
-    * This can be verified by testing the model with new pictures of bones that contains colours, since the dataset images are only in black, white and grey. Use x-ray images that contain only black, white and grey.
+- If the x-ray image uploaded is anything other than the usual black background, the model will predict false results.
+    * This can be verified by testing the model with new x-ray images that have a white background. Use x-ray images that have a black background.
 
 [Back to Top](#content)
 
@@ -187,7 +188,7 @@ An effective machine learning model makes accurate predictions by generalizing w
 
 If a model is trained for too long on the training dataset or is overly complex, it might start learning the noise or irrelevant details from the data. This leads to overfitting, where the model performs exceptionally well on the training data but poorly on new data due to its inability to generalize. Overfitting can be identified by evaluating the model's performance on validation and test datasets.
 
-Conversely, underfitting happens when the model fails to capture the underlying relationship between the input and output data. This can be detected by its poor performance on the training dataset, which usually results in similarly low accuracy on the validation and test datasets.
+Underfitting happens when the model fails to capture the underlying relationship between the input and output data. This can be detected by its poor performance on the training dataset, which usually results in similarly low accuracy on the validation and test datasets.
 
 ### Model Creation
 
@@ -203,7 +204,7 @@ The final model is a sequential model that includes the following components:
 
   - I used 3 Convolution layers in the model.
   - I used Conv2D as the images are in 2D.
-  - The number of filters that I used was 8, 16 and 16 to keep the complexity low
+  - The number of filters that I used was 8, 83 and 16 to keep the complexity low
   - I used the Kernel size of 3x3 because this is deemed the most efficient.
   - I used the Activation Relu because it is straightforward and efficient with hidden layers of a binary classification model.
 
@@ -363,7 +364,7 @@ This project was written in Python.
 
 ### Unfixed Bugs
 
-The dataset that I downloaded contains duplicate images in the presplit train, validation and test folders. If I were to join them and then split up again, some of the folders will contain duplicate files that are differently named. I tried looking for a different dataset but was unsuccesfull. I will continue trying to find a good dataset or delete the duplicates.
+The dataset that I downloaded contains duplicate images in the presplit train, validation and test folders. If I were to join them and then split up again, some of the folders will contain duplicate files that are differently named. I tried looking for a different dataset but was unsuccesfull. I will continue trying to find a better dataset.
 
 [Back to Top](#content)
 
@@ -427,8 +428,14 @@ You can see the deployed blog [here](https://prof-oaks-blog-0421d28e5692.herokua
 
 ### Media
 
-- The Readme image is from this website: 
+- The Readme image is from these websites : 
   * [Fractured bones image](https://lynxfreesm.shop/product_details/58369015.html)
   * [CRISP-DM image](https://quizlet.com/294902465/crisp-dm-diagram/)
 
 [Back to Top](#content)
+
+<br>
+
+## Final comments
+
+Some of my commits were pushed quite quickly after another. This is because my model training took a long time and I continued coding in VS code so I wouldn't lose any time.

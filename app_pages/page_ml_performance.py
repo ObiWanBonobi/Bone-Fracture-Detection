@@ -6,7 +6,7 @@ from src.machine_learning.evaluate_clf import load_test_evaluation
 
 
 def ml_performance_metrics():
-    version = 'v1'
+    version = 'v4'
 
     st.write("## **Performance Metrics**")
 
@@ -18,8 +18,7 @@ def ml_performance_metrics():
         3 sets: Train Set - 70% of the dataset. Validation Set - 10% of the dataset. 
         Test Set - 20% of the dataset.''')
 
-    labels_distribution = plt.imread(
-        f"outputs/{version}/labels_distribution.png")
+    labels_distribution = plt.imread(f"outputs/{version}/labels_distribution.png")
     st.image(labels_distribution,
              caption='Labels Distribution on Train, Validation and Test Sets')
 
@@ -54,8 +53,7 @@ def ml_performance_metrics():
     st.info(
         'The following data shows the model loss and accuracy on the test dataset.')
 
-    st.dataframe(pd.DataFrame(load_test_evaluation(
-        version), index=['Loss', 'Accuracy']))
+    st.dataframe(pd.DataFrame(load_test_evaluation(version), index=['Loss', 'Accuracy']))
 
     st.success('''
         The prediction accuracy of the test set data is above 97%. This is below 100%, 
@@ -70,8 +68,7 @@ def ml_performance_metrics():
 
     confusion_matrix = plt.imread(
         f"outputs/{version}/confusion_matrix.png")
-    st.image(confusion_matrix,
-             caption='Confusion Matrix of Test Dataset')
+    st.image(confusion_matrix, caption='Confusion Matrix of Test Dataset')
 
     st.success('''
         The confusion matrix shows the model made zero incorrect predictions when 

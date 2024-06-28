@@ -12,7 +12,7 @@ from app_pages.page_ml_performance import ml_performance_metrics
 app = MultiPage(app_name="Bone Fracture Detector")
 
 
-app.add_page('Quick Project Summary', summary_body)
+app.add_page('Project Summary', summary_body)
 app.add_page('Bones Visualiser', bones_visualizer_body)
 app.add_page('Fracture Detection', fracture_detector_body)
 app.add_page('Project Hypothesis', project_hypothesis_body)
