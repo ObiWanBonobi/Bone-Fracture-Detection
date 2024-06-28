@@ -270,6 +270,65 @@ I set the project's theme to dark upon loading the app to match the dark backgro
 
 ## Features
 
+**<details><summary>Navigation bar :</summary>**
+
+The navigation bar is accessible on the left on all pages.
+
+![Navigation bar](data/images/navigation.png)
+
+</details>
+
+**<details><summary>Page 1, Project Summary :</summary>**
+
+The project summary page serves as a concise overview that encapsulates the essence and objectives of the application. It highlights the app's primary function of accurately detecting bone fractures through advanced imaging analysis, providing a quick and reliable diagnostic tool for medical professionals. It also shows information about the given dataset, the business requirements and a link to the projects GitHub readme file.
+
+![Project Summary Page](data/images/summary-page.png)
+
+</details>
+
+**<details><summary>Page 2, Bones Visualiser :</summary>**
+
+The Bones Visualizer Page is a key feature of the bone fracture detector app, allowing users to visually differentiate between healthy and fractured bones. It provides options to view the differences between average and variability images, compare average fractured and healthy bones, and see montages of healthy or fractured bones.
+
+![Bones Visualiser Page](data/images/visualiser-1.png)
+![Bones Visualiser Page](data/images/visualiser-2.png)
+![Bones Visualiser Page](data/images/visualiser-3.png)
+![Bones Visualiser Page](data/images/visualiser-4.png)
+![Bones Visualiser Page](data/images/visualiser-5.png)
+
+</details>
+
+**<details><summary>Page 3, Fracture Detection :</summary>**
+
+The Fracture Detection page enables users to upload x-ray images of bones to determine the presence of fractures. Each uploaded image is analyzed, presenting a prediction of whether the bone is fractured along with a graph depicting the probability of the prediction's accuracy. A detailed report is generated for each image, including the image name, probability accuracy, and the diagnostic result. This report can be easily downloaded as a .csv file, allowing for straightforward review and analysis in Microsoft Excel.
+
+![Fracture Detection Page](data/images/detector-1.png)
+![Fracture Detection Page](data/images/detector-2.png)
+
+</details>
+
+**<details><summary>Page 4, Project Hypothesis :</summary>**
+
+The hypothesis page provides the user with details of the project hypotheses and their outcomes.
+
+![Project Hypothesis Page](data/images/hypothesis-1.png)
+![Project Hypothesis Page](data/images/hypothesis-2.png)
+![Project Hypothesis Page](data/images/hypothesis-3.png)
+
+</details>
+
+**<details><summary>Page 5, ML Performance Metrics :</summary>**
+
+The performance metrics page provides the user with the Machine Learning model dataset distribution, performance plots and performance on the test dataset.
+
+![Performance Metrics Page](data/images/performance-1.png)
+![Performance Metrics Page](data/images/performance-2.png)
+![Performance Metrics Page](data/images/performance-3.png)
+
+</details>
+
+<br>
+
 [Back to Top](#content)
 
 <br>
