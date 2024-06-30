@@ -12,7 +12,7 @@
 
 The Bone Fracture Detection dashboard app leverages Machine Learning to allow users to upload bone images, identify whether the bone is healthy or fractured, and download a detailed report of the analysis.
 
-[Click here to visit this project on Heroku.]()
+[Click here to visit this project on Heroku.](https://bone-fracture-detector-17d0aeeaa391.herokuapp.com/)
 
 <br>
 
@@ -83,7 +83,7 @@ Rationale to map the business requirements to the Data Visualizations and ML tas
   * A collection of images showcasing both healthy bones and fractured bones will be visualized on the dashboard.
 
 - **Business Requirement 2 :** Classification
-  * Develop and train a machine learning model designed to classify bones as either healthy or fractured. This task involves binary classification and requires defining the image dimensions.
+  * Develop and train a machine learning model designed to classify bones as either healthy or fractured. This task involves categorical classification and requires defining the image dimensions.
   * The predictions should have a 97% accuracy level.
 
 - **Business Requirement 3 :** Report
@@ -157,7 +157,7 @@ The **CRISP-DM** methodology was pivotal in guiding this Bone Fracture Detection
    - Extracted relevant features from the images and formatted them for machine learning model input.
 
 4. **Modeling :**
-   - Selected appropriate machine learning algorithms for binary classification of healthy versus fractured bones.
+   - Selected appropriate machine learning algorithms for categorical classification of healthy versus fractured bones.
    - Trained multiple models using the prepared data, experimenting with different algorithms and hyperparameters.
 
 5. **Evaluation :**
@@ -192,9 +192,9 @@ Underfitting happens when the model fails to capture the underlying relationship
 
 ### Model Creation
 
-This project focuses on image classification, requiring the implementation of a Convolutional Neural Network using TensorFlow. The goal is to develop a model for binary image classification, distinguishing between healthy and infected outcomes.
+This project focuses on image classification, requiring the implementation of a Convolutional Neural Network using TensorFlow. The goal is to develop a model for categorical image classification, distinguishing between healthy and infected outcomes.
 
-For binary classification tasks, the approach involves choosing between two options: using a single neuron with a sigmoid activation function or employing two neurons with a softmax activation function. Both configurations were tested and fine-tuned during the experimental phase.
+For categorical classification tasks, the approach involves choosing between two options: using a single neuron with a sigmoid activation function or employing two neurons with a softmax activation function. Both configurations were tested and fine-tuned during the experimental phase.
 
 The model underwent iterative refinement to address issues like underfitting and overfitting, ensuring it achieves balanced performance. Version v5 was ultimately selected for deployment based on comprehensive model evaluation.
 
@@ -302,8 +302,9 @@ The Bones Visualizer Page is a key feature of the bone fracture detector app, al
 
 The Fracture Detection page enables users to upload x-ray images of bones to determine the presence of fractures. Each uploaded image is analyzed, presenting a prediction of whether the bone is fractured along with a graph depicting the probability of the prediction's accuracy. A detailed report is generated for each image, including the image name, probability accuracy, and the diagnostic result. This report can be easily downloaded as a .csv file, allowing for straightforward review and analysis in Microsoft Excel.
 
-![Fracture Detection Page](data/images/detector-1.png)
-![Fracture Detection Page](data/images/detector-2.png)
+![Fracture Detection Page](data/images/detector-page-1.png)
+
+![Fracture Detection Page](data/images/detector-page-2.png)
 
 </details>
 
@@ -337,15 +338,15 @@ The performance metrics page provides the user with the Machine Learning model d
 
 **Business Requirement 1: Data Visualization**
 
-You can view the visualization study on the [Bones Visualizer page]() of the dashboard. This study includes mean and variability images, along with an image montage that compares healthy and fractured bones. The average and variability images for fractured and unfractured bones reveal subtle distinctions that are often challenging to discern. Despite the differences in bone integrity, these images occasionally show only slight variations in texture and structure.
+You can view the visualization study on the [Bones Visualizer page](https://bone-fracture-detector-17d0aeeaa391.herokuapp.com/) of the dashboard. This study includes mean and variability images, along with an image montage that compares healthy and fractured bones. The average and variability images for fractured and unfractured bones reveal subtle distinctions that are often challenging to discern. Despite the differences in bone integrity, these images occasionally show only slight variations in texture and structure.
 
 **Business Requirement 2: Classification**
 
-You can access the classification tool on the [Fracture Detector page]() of the dashboard. Users can upload bone images and receive classification predictions for each image, either fractured or not fractured, accompanied by a probability graph. The predictions have an accuracy rate exceeding 97%.
+You can access the classification tool on the [Fracture Detector page](https://bone-fracture-detector-17d0aeeaa391.herokuapp.com/) of the dashboard. Users can upload bone images and receive classification predictions for each image, either fractured or not fractured, accompanied by a probability graph. The predictions have an accuracy rate exceeding 97%.
 
 **Business Requirement 3: Report**
 
-After classifying the images, you can view the report on the [Fracture Detector page]() of the dashboard. The report displays a table with the image name, probability percentage, and result for each uploaded image. Additionally, users can click 'Download Report' to save the report as a .csv file, which can be easily opened in Microsoft Excel.
+After classifying the images, you can view the report on the [Fracture Detector page](https://bone-fracture-detector-17d0aeeaa391.herokuapp.com/) of the dashboard. The report displays a table with the image name, probability percentage, and result for each uploaded image. Additionally, users can click 'Download Report' to save the report as a .csv file, which can be easily opened in Microsoft Excel.
 
 [Back to Top](#content)
 
@@ -623,7 +624,7 @@ To clone this repository, you have to :
   - Type git clone, and then paste the URL you copied earlier.
   - Press Enter to create your local clone.
 
-You can see the deployed blog [here]().
+You can see the deployed blog [here](https://bone-fracture-detector-17d0aeeaa391.herokuapp.com/).
 
 [Back to Top](#content)
 
