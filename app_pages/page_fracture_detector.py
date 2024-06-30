@@ -28,7 +28,7 @@ def fracture_detector_body():
 
     st.write("---")
 
-    images_buffer = st.file_uploader('Upload bone images. You may select more than one.',
+    images_buffer = st.file_uploader('Upload x-ray images. You may select more than one.',
                                         type=['png', 'jpg', 'jpeg'], accept_multiple_files=True)
 
     if images_buffer is not None:
@@ -41,7 +41,7 @@ def fracture_detector_body():
             st.image(
                 img_pil, caption=f"Image Size: {img_array.shape[1]}px width x {img_array.shape[0]}px height")
 
-            version = 'v4'
+            version = 'v5'
             resized_img = change_input_image(img=img_pil, version=version)
             pred_proba, pred_class = load_model_and_predict(
                 resized_img, version=version)

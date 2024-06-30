@@ -6,7 +6,7 @@ from src.machine_learning.evaluate_clf import load_test_evaluation
 
 
 def ml_performance_metrics():
-    version = 'v4'
+    version = 'v5'
 
     st.write("## **Performance Metrics**")
 
@@ -71,7 +71,7 @@ def ml_performance_metrics():
     st.image(confusion_matrix, caption='Confusion Matrix of Test Dataset')
 
     st.success('''
-        The confusion matrix shows the model made zero incorrect predictions when 
+        The confusion matrix shows the model made 9 incorrect predictions when 
         evaluating the test dataset where a fractured bone was predicted to be healthy.''')
 
     st.write("---")
@@ -85,7 +85,7 @@ def ml_performance_metrics():
         other by their appearance.
         * Business Requirement 2: This requirement is met as the Fracture Detection page 
         will predict if a given bone from an uploaded x-ray image is healthy or fractured 
-        with a 97% accuracy rate.
+        with a 98% accuracy rate.
         * Business Requirement 3: This requirement is met as a report can be downloaded 
         from the Fracture Detection page of the predictions made on the uploaded images.
         ''')

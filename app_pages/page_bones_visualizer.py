@@ -25,7 +25,7 @@ def bones_visualizer_body():
         of fractures, promoting better awareness and facilitating more informed 
         discussions on bone health.''')
 
-    version = 'v4'
+    version = 'v5'
     if st.checkbox(
         "Difference between average and variability in fractured and not fractured images"):
 

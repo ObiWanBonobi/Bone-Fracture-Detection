@@ -56,7 +56,7 @@ def load_model_and_predict(my_image, version):
     model = load_model(f"outputs/{version}/bone_detector_model.h5")
     pred_proba = model.predict(my_image)[0, 0]
 
-    target_map = {v: k for k, v in {'Not Fractured': 1, 'Fractured': 0}.items()}
+    target_map = {v: k for k, v in {'Not Fractured': 0, 'Fractured': 1}.items()}
     pred_class = target_map[pred_proba > 0.5]
     if pred_class == target_map[0]:
         pred_proba = 1 - pred_proba

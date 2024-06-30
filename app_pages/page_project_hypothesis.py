@@ -63,8 +63,8 @@ def project_hypothesis_body():
     st.image('data/images/black-xray.jpg', caption='Black x-ray image', width=650)
 
     st.info('''
-        This was validated by uploading 20 white x-ray images and all came back as fractured
-        even when they were not fractured. When black x-ray images got uploaded there were
+        This was validated by uploading 20 white x-ray images and some came back with 
+        incorrect predictions. When black x-ray images got uploaded there were
         no issues. This insight will be taken to the client to ensure they are aware of the 
         image background requirements for the best model performance. If more white x-ray 
         images get provided then the model could be retrained to get an accurate prediction
@@ -72,4 +72,4 @@ def project_hypothesis_body():
     
     st.success('''
         Conclusion: This hypothesis was correct as the model incorrectly predicted the 
-        classification of all white images to fractured.''')
+        classification of some white images.''')

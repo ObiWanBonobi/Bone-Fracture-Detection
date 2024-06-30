@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-    <img src="data/images/bone-fracture.webp">
+    <img src="data/images/broken-skeleton.jpg">
 <p>
 
 <br>
@@ -196,7 +196,7 @@ This project focuses on image classification, requiring the implementation of a 
 
 For binary classification tasks, the approach involves choosing between two options: using a single neuron with a sigmoid activation function or employing two neurons with a softmax activation function. Both configurations were tested and fine-tuned during the experimental phase.
 
-The model underwent iterative refinement to address issues like underfitting and overfitting, ensuring it achieves balanced performance. Version v4 was ultimately selected for deployment based on comprehensive model evaluation.
+The model underwent iterative refinement to address issues like underfitting and overfitting, ensuring it achieves balanced performance. Version v5 was ultimately selected for deployment based on comprehensive model evaluation.
 
 The final model is a sequential model that includes the following components:
 
@@ -204,9 +204,9 @@ The final model is a sequential model that includes the following components:
 
   - I used 3 Convolution layers in the model.
   - I used Conv2D as the images are in 2D.
-  - The number of filters that I used was 8, 16 and 16 to keep the complexity low
+  - The number of filters that I used was 16, 16 and 16 to keep the complexity low
   - I used the Kernel size of 3x3 because this is deemed the most efficient.
-  - I used the Activation Relu because it is straightforward and efficient with hidden layers of a binary classification model.
+  - I used the Activation Relu because it is straightforward and efficient with hidden layers of a categorical classification model.
 
 - **Pooling layers** - This was used to reduce the image size by capturing only the most significant pixels from the image.
 
@@ -223,8 +223,8 @@ The final model is a sequential model that includes the following components:
   - 0.5 was chosen.
 
 - **Output layer**
-  - sigmoid activation was determined as optimal through iterative testing. This configuration necessitated 1 node to accommodate the output possibility, with binary_crossentropy selected as the appropriate loss function.
-  - The SGD optimizer was selected after thorough experimentation and testing.
+  - Softmax activation was determined as optimal through iterative testing. This configuration necessitated 2 nodes to accommodate the output possibilities, with categorical_crossentropy selected as the appropriate loss function.
+  - The adam optimizer was selected after thorough experimentation and testing.
 
 [Back to Top](#content)
 
@@ -379,7 +379,7 @@ Conclusion: The hypothesis was partially validated. While the average and variab
 
 This was confirmed by testing the model on a separate dataset.
 
-During training and validation, the model achieved an accuracy of over 99%, and it maintained a 99% accuracy when evaluated on the test dataset.
+During training and validation, the model achieved an accuracy of over 98%, and it maintained a 98% accuracy when evaluated on the test dataset.
 
 Conclusion: The hypothesis was validated as the model, utilizing a Convolutional Neural Network, successfully classified X-ray images of bones as either healthy or fractured with an accuracy exceeding 97%.
 
@@ -393,9 +393,9 @@ This was confirmed by uploading the following white images to the dashboard:
 
 ![Hypothesis Pictures](data/images/white-image-incorrect-predictions.png)
 
-The results showed only the first image that is fractured returns correct. The other images return an incorrect prediction:
+The results showed that the first, second and fourth images return correct. The third image returns an incorrect prediction:
 
-![Hypothesis Results]()
+![Hypothesis Results](data/images/incorrect-results.png)
 
 This insight will be communicated to the client to ensure they understand the importance of using the correct X-ray color scheme for optimal model performance. The x-ray image should follow this colour scheme :
 
@@ -440,7 +440,7 @@ This project was written in Python.
 
 **<details><summary>Model testing :</summary>**
 
-The version used for the dashboard was version 4, as this showed a normal fit with no sign of overfitting and had an accuracy level of above 99% to meet business requirement 2. All versions got tested on the test_set, had early_stopping with patience on 3.
+The version used for the dashboard was version 5, as this showed a normal fit with no sign of overfitting and had an accuracy level of above 97% to meet business requirement 2. All versions got tested on the test_set, had early_stopping with patience on 3.
 
 - Version 1 : showed signs of slight underfitting.
 
@@ -466,7 +466,7 @@ The version used for the dashboard was version 4, as this showed a normal fit wi
 
 <br>
 
-- Version 4 : shows a normal learning curve. This is the model that was chosen.
+- Version 4 : shows signs of overfitting in the confusion matrix.
 
 <br>
 
@@ -474,7 +474,7 @@ The version used for the dashboard was version 4, as this showed a normal fit wi
 
 <br>
 
-- Version 5 : version 4 behaved better.
+- Version 5 : shows a normal learning curve. This is the model that was chosen.
 
 <br>
 
@@ -557,7 +557,7 @@ Business requirement 1 : Data Visualization
 
 <details><summary>Confusion Matrix bug :</summary>
 
-- The matrix was returning incorrectly. 
+- The matrix was returning incorrectly. This was because my model was overfitting. When I changed my model, the confusion matrix returned correctly
 
 ![Image types](/data/images/confusion-matrix-bug.png)
 
@@ -571,19 +571,11 @@ Business requirement 1 : Data Visualization
 
 </details>
 
-<details><summary>White image upload bug :</summary>
-
-- When a white image gets uploaded the prediction is always fractured. 
-
-![Image types](/data/images/white-image-bug-2.png)
-
-![Image types](/data/images/white-image-bug.png)
-
-</details>
+- The model and the evaluation image weren't working. I had accidentally saved the evaluation pickle on the model name, bone_detector_model.h5, instead of the new 'evaluation.pkl' name.
 
 ### Unfixed Bugs
 
-The dataset that I downloaded contains duplicate images in the presplit train, validation and test folders. If I were to join them and then split up again, some of the folders will contain duplicate files that are differently named. I tried looking for a different dataset but was unsuccesfull. I will continue trying to find a better dataset.
+The dataset that I downloaded contains duplicate images in the presplit train, validation and test folders. If I were to join them and then split up again, some of the folders will contain duplicate files that are differently named or duplicate file names with different images. I tried looking for a different dataset but was unsuccesfull. I will continue trying to find a better dataset.
 
 [Back to Top](#content)
 
@@ -616,14 +608,14 @@ To deploy Your App to Heroku, you have to :
 ### Github deployment
 
 To fork this repository on Github, you have to :
-  - Go to my [GitHub repository called PP4](https://github.com/ObiWanBonobi/PP4).
+  - Go to my [GitHub repository called PP5](https://github.com/ObiWanBonobi/PP5).
   - In the top-right corner of the page, click Fork.
   - Under "Owner," select the dropdown menu and click an owner for the forked repository.
   - By default, forks are named the same as their upstream repositories. Optionally, to further distinguish your fork, in the "Repository name" field, type a name.
   - Click Create fork.
 
 To clone this repository, you have to :
-  - Go to my [GitHub repository called PP4](https://github.com/ObiWanBonobi/PP4).
+  - Go to my [GitHub repository called PP5](https://github.com/ObiWanBonobi/PP5).
   - Above the list of files, click  Code.
   - Copy the URL for the repository.
   - Open Git Bash.
@@ -631,7 +623,7 @@ To clone this repository, you have to :
   - Type git clone, and then paste the URL you copied earlier.
   - Press Enter to create your local clone.
 
-You can see the deployed blog [here](https://prof-oaks-blog-0421d28e5692.herokuapp.com/).
+You can see the deployed blog [here]().
 
 [Back to Top](#content)
 
@@ -649,7 +641,7 @@ You can see the deployed blog [here](https://prof-oaks-blog-0421d28e5692.herokua
 ### Media
 
 - The Readme image is from these websites : 
-  * [Fractured bones image](https://lynxfreesm.shop/product_details/58369015.html)
+  * [Aww snap skeleton image](https://www.spreadshirt.ca/shop/design/awww+snap+skeleton+broken+bones+womens+t-shirt-D604f693642e67062618fe3af?sellable=nO3vXonzzyFNzrGY4M8q-347-8)
   * [CRISP-DM image](https://quizlet.com/294902465/crisp-dm-diagram/)
 - The streamlit background images are from these websites :
   * [Skeletons background for main section](https://www.shutterstock.com/image-vector/funny-cartoon-dancing-skeleton-simple-black-2360714257)
